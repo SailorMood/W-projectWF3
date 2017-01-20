@@ -100,7 +100,10 @@
 			<section>
 				<?= $this->section('main_content') ?>
 			</section>
-		</main>
+            <nav>
+            <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FRadio-Taxi-Dieppe-630418987085765%2F%3Ffref%3Dts&width=450&layout=standard&action=like&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            </nav>
+        </main>
 		<footer>
 			<ul>
 				<li><a href="https://www.twitter.com"title="vers notre twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
@@ -108,7 +111,7 @@
 				<li><a href="./avis/"title="votre avis compte">Votre avis nous intéresse</a></li>
 				<li><a href="./contact/"title="nous contacter">Contactez nous </a></li>
 			</ul>
-		</footer>
+        </footer>
 	</div>
 </body>
 </html>
