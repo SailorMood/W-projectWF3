@@ -42,5 +42,12 @@ VALUES (:id, :name, :firstname, :numberphone, :email, :message)");
 
         ));
 
+        if (isset($_POST['addMessage'])){
+            AvisController::envoiAvis();
+        } else{
+            $e = "Ahah vous n'avez pas dit le mot magique !";
+            echo($e);
+        }
+
     }
 }

@@ -14,14 +14,6 @@
       <textarea required="required" name="message" placeholder="Message*"></textarea><br>
       <input type="hidden" name="users_id" value="">
       <input class="" type="submit" name="addMessage" value="Envoyer">
-        <?php
-        if (isset($_POST['addMessage'])){
-            AvisController::envoiAvis();
-        } else{
-            $e = "Ahah vous n'avez pas dit le mot magique !";
-            echo($e);
-        }
-        ?>
     </form>
     <p>*Champs devant obligatoirement être renseignés</p>
   </div>

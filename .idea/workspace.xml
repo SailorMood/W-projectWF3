@@ -5,9 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Controller/AvisController.php" afterPath="$PROJECT_DIR$/app/Controller/AvisController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/avis/avis.php" afterPath="$PROJECT_DIR$/app/Views/avis/avis.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Views/layout.php" afterPath="$PROJECT_DIR$/app/Views/layout.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/js/master.js" afterPath="$PROJECT_DIR$/public/assets/js/master.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,9 +32,12 @@
       <file leaf-file-name="AvisController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Controller/AvisController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="734">
+              <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+              <folding>
+                <marker date="1484926839100" expanded="true" signature="331:371" ph="SELECT * FRO... avis" />
+                <marker date="1484926839100" expanded="true" signature="925:1057" ph="INSERT INTO avis... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,8 +65,8 @@
       <file leaf-file-name="avis.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Views/avis/avis.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+            <state relative-caret-position="572">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -94,9 +94,9 @@
         <option value="$PROJECT_DIR$/public/assets/js/master.js" />
         <option value="$PROJECT_DIR$/app/Views/avis/afficherAvis.php" />
         <option value="$PROJECT_DIR$/app/Views/layout.php" />
-        <option value="$PROJECT_DIR$/app/Controller/AvisController.php" />
-        <option value="$PROJECT_DIR$/app/Views/avis/avis.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
+        <option value="$PROJECT_DIR$/app/Views/avis/avis.php" />
+        <option value="$PROJECT_DIR$/app/Controller/AvisController.php" />
       </list>
     </option>
   </component>
@@ -207,7 +207,7 @@
       <workItem from="1484899861112" duration="1080000" />
       <workItem from="1484900961101" duration="140000" />
       <workItem from="1484901114672" duration="22486000" />
-      <workItem from="1484926333455" duration="54000" />
+      <workItem from="1484926333455" duration="529000" />
     </task>
     <task id="LOCAL-00001" summary="Commit">
       <created>1484926106326</created>
@@ -216,11 +216,18 @@
       <option name="project" value="LOCAL" />
       <updated>1484926106326</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit">
+      <created>1484926395606</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1484926395606</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24356000" />
+    <option name="totallyTimeSpent" value="24831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
@@ -291,7 +298,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
           <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1484926839100" expanded="true" signature="331:371" ph="SELECT * FRO... avis" />
+            <marker date="1484926839100" expanded="true" signature="925:1057" ph="INSERT INTO avis... " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -337,6 +347,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -387,6 +398,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -430,6 +442,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="709">
           <caret line="103" column="3" lean-forward="true" selection-start-line="103" selection-start-column="3" selection-end-line="103" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -537,13 +550,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Controller/AvisController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -564,10 +570,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Controller/AvisController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="734">
+          <caret line="49" column="9" lean-forward="false" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding>
+            <marker date="1484926839100" expanded="true" signature="331:371" ph="SELECT * FRO... avis" />
+            <marker date="1484926839100" expanded="true" signature="925:1057" ph="INSERT INTO avis... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Views/avis/avis.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="38" lean-forward="false" selection-start-line="8" selection-start-column="38" selection-end-line="8" selection-end-column="38" />
+        <state relative-caret-position="572">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>
