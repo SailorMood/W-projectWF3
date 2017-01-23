@@ -1,7 +1,8 @@
-<?php $this->layout('layout', ['title' => 'Avis']) ?>
+<?php use Controller\AvisController;
+
+$this->layout('layout', ['title' => 'Avis']) ?>
 
 <?php $this->start('main_content') ?>
-
 
 <div id="formAvis" class="hide">
     <h2>Votre avis nous intéresse</h2>

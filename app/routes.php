@@ -5,9 +5,9 @@
 		['GET', '/contact/', 'Contact#afficheContact', 'contact'],
 
         //Avis
-		['GET', '/avis/', 'Avis#afficheAvis', 'avis'],
-        ['GET', '/avis/', 'Avis#avisUtilisateurs', 'avisUsers'],
-        ['GET|POST', '/avis/', 'Avis#envoiAvis', 'avisEnvoi'],
+		['GET', '/avis/', 'AvisController#afficheAvis', 'avis'],
+        ['GET', '/avis/', 'AvisController#avisUtilisateurs', 'avisUsers'],
+        ['GET|POST', '/avis/', 'AvisController#envoiAvis', 'avisEnvoi'],
 
         //Log
 		['POST', '/', 'Login#login', 'connexion'],

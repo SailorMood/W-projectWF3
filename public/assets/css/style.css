@@ -136,6 +136,17 @@ nav a {
   padding: 1em;
 }
 
+.customReview p{
+  text-align: center;
+}
+
+.likefb{
+  display: inline-flex;
+  padding-left: 61.5em;
+  padding-top: 10em;
+}
+
+
 /* page Contact */
 .contact {
   text-align: center;

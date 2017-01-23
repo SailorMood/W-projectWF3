@@ -78,16 +78,16 @@ $(function(){
   // Faire défiler des images en background -----------------
 
     var images = [
-        "images/taxi1.jpg",
-        "images/taxi4.jpg",
-        "images/taxi5.jpg"
+        "../images/taxi1.jpg",
+        "../images/taxi4.jpg",
+        "../images/taxi5.jpg"
     ];
     var $body = $("body"),
         $bg = $(".back"),
         n = images.length,
-        c = 0; // Loop Counter
+        c = 0;
 
-  // Preload Array of images...
+  // un array des images
     for(var i=0; i<n; i++){
         var tImg = new Image();
         tImg.src = images[i];

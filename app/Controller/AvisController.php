@@ -3,6 +3,7 @@
 namespace Controller;
 
 use \W\Controller\Controller;
+use \Model\insertAvisModel;
 use PDO;
 
 class AvisController extends Controller {
@@ -21,32 +22,22 @@ class AvisController extends Controller {
             $name = $listeAvis[$i]['name'];
             $firstname = $listeAvis[$i]['firstname'];
             $message = $listeAvis[$i]['message'];
-            echo '<h2>'.$name.'</h2>', '<h3>'.$firstname.'</h3>'.'<br>', $message;
+            echo '<h2>'.$name.'</h2>', '<h3>'.$firstname.'</h3>'.'<br>', '<p>'.$message.'</p>';
         }
 
     }
 
     public static function envoiAvis() {
-        $instance = new PDO("mysql:host=localhost;dbname=blog", "root", "");
-
-        $query = $instance->prepare("INSERT INTO avis ( id, name, firstname, numberphone, email, message)
-VALUES (:id, :name, :firstname, :numberphone, :email, :message)");
-
-        $insertSuccess = $query->execute(array(
-            "id" => NULL,
-            "name" => $_POST['name'],
-            "firstname" => $_POST['firstname'],
-            "numberphone" => $_POST['numberphone'],
-            "email" => $_POST['email'],
-            "message" => $_POST['message']
-
-        ));
-
         if (isset($_POST['addMessage'])){
-            AvisController::envoiAvis();
-        } else{
-            $e = "Ahah vous n'avez pas dit le mot magique !";
-            echo($e);
+            $newAvis = array(
+                "name" => $_POST['name'],
+                "firstname" => $_POST['firstname'],
+                "numberphone" => $_POST['numberphone'],
+                "email" => $_POST['email'],
+                "message" => $_POST['message']
+            );
+            $insertAvis = new insertAvisModel();
+            $insertion = $insertAvis -> insertAvis($newAvis);
         }
 
     }
