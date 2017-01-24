@@ -33,23 +33,7 @@
 		<div id="wrap"></div>
 		<main>
 
-			<!-- formulaire d'inscrition -->
-			<div id="formSignup" class="hide">
-			  <h2>Inscription</h2>
-			  <form class="" action="/signup.php" method="post">
-			    <label for="">Nom</label><br>
-			    <input required="required" type="text" name="userName" value="">
-			    <label for="">Prénom</label><br>
-			    <input required="required" type="text" name="firstName" value="">
-			    <label for="">N° de portable</label><br>
-			    <input required="required" step="10" type="text" name="numberphone" value="">
-			    <label for="">Email</label><br>
-			    <input required="required" type="text" name="email" value="">
-			    <label for="">Mot de passe</label>
-			    <input required="required" type="password" name="password" value="">
-			    <input type="submit" name="createUser" value="Valider">
-			  </form>
-			</div>
+        <?php include('users/inscription.php');?>
 
 			<!-- formulaire de connexion -->
 			<div id="formLogin" class="hide">

@@ -14,10 +14,15 @@ class insertAvisModel extends Model
         $dbhConnect = new ConnectionModel();
         $instance = $dbhConnect -> getDbh();
         // requête d'ajout d'un avis
-        $sql = "INSERT INTO avis (name, firstname, numberphone, email, message)
-    VALUES ('".$newAvis['name']."','".$newAvis['firstname']."','".$newAvis['numberphone']."', '".$newAvis['email']."', '".$newAvis['message']."')";
+        $sql = $instance->prepare("INSERT INTO avis (name, firstname, numberphone, email, message) VALUES (:name, :firstname, :numberphone, :email, :message)");
 
-        $insertSuccess = $instance->exec($sql);
+        $insertSuccess = $sql->execute(array(
+            "name" => $newAvis['name'],
+            "firstname" => $newAvis['firstname'],
+            "numberphone" => $newAvis['numberphone'],
+            "email" => $newAvis['email'],
+            "message" => $newAvis['message']
+        ));
 
     }
 }

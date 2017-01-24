@@ -27,7 +27,7 @@ class AvisController extends Controller {
 
     }
 
-    public static function envoiAvis() {
+    public function envoiAvis() {
         if (isset($_POST['addMessage'])){
             $newAvis = array(
                 "name" => $_POST['name'],
