@@ -5,6 +5,7 @@ use \W\Controller\Controller;
 use \Model\insertUserModel;
 use \Model\LoginModel;
 use \W\Security\AuthentificationModel;
+use \W\Model\UsersModel;
 
 
 class userController extends Controller
@@ -32,23 +33,24 @@ class userController extends Controller
     }
 
     public function connexionForm() {
-        if (isset($_POST['connexion'])){
-            // On instancie un nouvel objet car les méthodes de la classe ne sont pas static
+        if (isset($_POST['connect'])){
+            // On instancie un nouvel objet
             $authUser = new AuthentificationModel();
             // $userID nous renvoie l'ID de l'utilisateur si les infos sont correctes sinon il renvoie 0
             $userID = $authUser -> isValidLoginInfo($_POST['numberphone'], $_POST['password']);
-            echo $userID;
+
             $cryptedPassword = password_hash($_POST['password'], PASSWORD_DEFAULT);
             $user = array(
                 'numberphone' => $_POST['numberphone'],
                 'password' => $cryptedPassword
             );
 
-            $connectUser = $authUser -> logUserIn($user);
             var_dump($user);
+            var_dump($authUser);
+            $connectUser = $authUser -> logUserIn($user);
+            var_dump($userID);
 
-            $this->show('default/home');
         }
-
+            $this->show('default/home');
     }
 }
