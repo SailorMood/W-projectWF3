@@ -10,10 +10,10 @@
         ['GET|POST', '/avis/poster/', 'AvisController#envoiAvis', 'poster_avis'],
 
         //Log
-		['POST', '/', 'Login#login', 'connexion'],
-		['GET', '/', 'Logout#logout', 'déconnexion'],
+		['GET|POST', '/users/connexion/', 'userController#connexionForm', 'connexion'],
+		['GET', '/', 'Logout#logout', 'deconnexion'],
 
         //inscription
-        ['GET|POST', '/users/inscription/', 'UserController#inscription', 'inscription']
+        ['GET|POST', '/users/inscription/', 'userController#inscriptionForm', 'inscription']
 
 	);

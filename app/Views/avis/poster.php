@@ -1,7 +1,7 @@
 <?php ?>
 <div id="formAvis" class="hide">
     <h2>Votre avis nous intéresse</h2>
-    <form method="post" >
+    <form method="post" action="http://localhost/W-projectWF3-Sailor/public/avis/poster/" >
       <label class="inf">&#9998;Informations :</label><br>
       <input type="text" required="required" name="name" value="" placeholder="Nom*"><br>
       <input type="text" required="required" name="firstname" value="" placeholder="Prénom*"><br>

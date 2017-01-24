@@ -16,14 +16,10 @@ class insertUserModel extends Model
         $dbhConnect = new ConnectionModel();
         $instance = $dbhConnect -> getDbh();
         // requête d'ajout d'un utilisateur
-        $sql = $instance->prepare("INSERT INTO users (name, firstname, numberphone, email, password) VALUES (:name, :firstname, :numberphone, :email, :password)");
+        $sql = "INSERT INTO users (name, firstname, numberphone, email, password)
+    VALUES ('".$newUser['name']."', '".$newUser['firstname']."', '".$newUser['numberphone']."','".$newUser['email']."','".$newUser['password']."')";
 
-        $insertSuccess = $sql->execute(array(
-            "name" => $newUser['name'],
-            "firstname" => $newUser['firstname'],
-            "numberphone" => $newUser['numberphone'],
-            "email" => $newUser['email'],
-            "password" => $newUser['password']
-        ));
+        $insertSuccess = $instance->exec($sql);
+
     }
 }

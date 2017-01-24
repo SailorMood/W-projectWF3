@@ -33,20 +33,9 @@
 		<div id="wrap"></div>
 		<main>
 
-        <?php include('users/inscription.php');?>
+        <?php include('users/inscription.php'); ?>
 
-			<!-- formulaire de connexion -->
-			<div id="formLogin" class="hide">
-			  <h2>Connexion</h2>
-			  <form class="" action="#" method="post">
-			    <label for="">Votre identifiant</label><br>
-			      <input required="required" type="text" name="numberphone" placeholder="Votre numéro de portable">
-			    <label for="">Votre mot de passe</label><br>
-			      <input required="required" type="password" name="password" placeholder="Votre nom de passe">
-			    <input type="hidden" name="userId" value="">
-			      <input type="submit" name="userName" value="connexion">
-			  </form>
-			</div>
+		<?php include('users/connexion.php'); ?>
 
 
 			<!-- formulaire de commamnde de trajet -->
