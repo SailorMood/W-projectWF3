@@ -3,20 +3,20 @@
 <?php $this->start('main_content') ?>
 
 <div id="formContact" class="hide">
-	<form action="pageContact.php" method="post">
+	<form action="http://localhost/W-projectWF3-Sailor/public/contact/contact/" method="post">
       <label>Sujet :<span class="star">*</span> </label>
-			<select name="sujet">
+			<select name="motif">
 				<option><< Selectionner >></option>
         <option value="Devis">Devis</option>
         <option value="Renseignements">Renseignements</option>
         <option value="Autre">Autre</option>
       </select><br>
-      <label>Nom :<span class="star">*</span> </label><input type="text" name="" value="" placeholder="Prénom"><br>
-      <label>Prénom :<span class="star">*</span> </label><input type="text" name="" value="" placeholder="Nom"><br>
-      <label>Email :<span class="star">*</span> </label><input type="email" name="" value="" placeholder="Email"><br>
-      <label>Téléphone : </label><input type="number" name="" value="" placeholder="Téléphone"><br>
-      <label>Message :<span class="star">*</span> </label><textarea name="name" placeholder="Message"></textarea><br>
-      <input type="submit" name="" value="Envoyer">
+      <label>Nom :<span class="star">*</span> </label><input type="text" name="name" value="" placeholder="Nom"><br>
+      <label>Prénom :<span class="star">*</span> </label><input type="text" name="firstname" value="" placeholder="prénom"><br>
+      <label>Email :<span class="star">*</span> </label><input type="email" name="email" value="" placeholder="Email"><br>
+      <label>Téléphone : </label><input type="number" name="" value="numberphone" placeholder="Téléphone"><br>
+      <label>Message :<span class="star">*</span> </label><textarea name="message" placeholder="Message"></textarea><br>
+      <input type="submit" name="sendMess" value="Envoyer">
         <p>Les champs suivis d'un <span class="star">*</span> sont obligatoires</p>
     </form>
 </div>

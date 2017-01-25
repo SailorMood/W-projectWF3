@@ -2,7 +2,10 @@
 
 	$w_routes = array(
 		['GET', '/', 'Default#home', 'default_home'],
+
+        //Contact
 		['GET', '/contact/', 'Contact#afficheContact', 'contact'],
+        ['GET', '/contact/contact', 'MessageController#envoiMessage', 'message'],
 
         //Avis
 		['GET', '/avis/', 'AvisController#afficheAvis', 'avis'],

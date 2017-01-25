@@ -157,6 +157,9 @@ footer {
   padding: 2em;
   border: solid 0.3em black;
   text-align: center;
+  position:absolute;
+  bottom:0px;
+  width: 100%;
 }
 
 footer a {
