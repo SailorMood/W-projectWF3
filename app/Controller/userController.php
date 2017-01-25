@@ -46,7 +46,6 @@ class userController extends Controller
             );
 
             var_dump($user);
-            var_dump($authUser);
             $connectUser = $authUser -> logUserIn($user);
             var_dump($userID);
 

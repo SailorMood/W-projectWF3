@@ -78,9 +78,11 @@ $(function(){
   // Faire défiler des images en background -----------------
 
     var images = [
-        "../images/taxi1.jpg",
-        "../images/taxi4.jpg",
-        "../images/taxi5.jpg"
+        "assets/images/taxi1.jpg",
+        "assets/images/taxi4.jpg",
+        "assets/images/taxi3.jpg",
+        "assets/images/taxi5.jpg",
+        "assets/images/taxi6.jpg"
     ];
     var $body = $("body"),
         $bg = $(".back"),
@@ -109,7 +111,7 @@ $(function(){
         window.addEventListener("keydown", function(e){
             kkeys.push( e.keyCode );
             if ( kkeys.toString().indexOf( konami ) >= 0 ) {
-                alert('VOUS AVEZ DIT LE MOT MAGIQUE');
+                alert('VOUS AVEZ DIT LE MOT MAGIQUE, YOUR BASE ARE BELONG TO US');
                 window.location = "http://localhost/W-projectWF3-Sailor/public/";
             }
         }, true);
