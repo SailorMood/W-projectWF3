@@ -7,9 +7,9 @@
       <label>Sujet :<span class="star">*</span> </label>
 			<select name="motif">
 				<option><< Selectionner >></option>
-        <option value="Devis">Devis</option>
-        <option value="Renseignements">Renseignements</option>
-        <option value="Autre">Autre</option>
+        <option name="devis" value="Devis">Devis</option>
+        <option name="renseignements" value="Renseignements">Renseignements</option>
+        <option name="autre" value="Autre">Autre</option>
       </select><br>
       <label>Nom :<span class="star">*</span> </label><input type="text" name="name" value="" placeholder="Nom"><br>
       <label>Prénom :<span class="star">*</span> </label><input type="text" name="firstname" value="" placeholder="prénom"><br>
