@@ -14,7 +14,7 @@ class MessageController extends Controller
 {
     public function envoiMessage() {
         if (isset($_POST['sendMess'])){
-            $newAvis = array(
+            $newMessage = array(
                 "motif" => $_POST['motif'],
                 "name" => $_POST['name'],
                 "firstname" => $_POST['firstname'],
