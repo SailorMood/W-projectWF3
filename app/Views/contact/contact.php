@@ -14,7 +14,7 @@
       <label>Nom :<span class="star">*</span> </label><input type="text" name="name" value="" placeholder="Nom"><br>
       <label>Prénom :<span class="star">*</span> </label><input type="text" name="firstname" value="" placeholder="prénom"><br>
       <label>Email :<span class="star">*</span> </label><input type="email" name="email" value="" placeholder="Email"><br>
-      <label>Téléphone : </label><input type="number" name="numberphone" value="" placeholder="Téléphone"><br>
+      <label>Téléphone : </label><input type="text" step="10" name="numberphone" value="" placeholder="Téléphone"><br>
       <label>Message :<span class="star">*</span> </label><textarea name="message" placeholder="Message"></textarea><br>
       <input type="submit" name="sendMess" value="Envoyer">
         <p>Les champs suivis d'un <span class="star">*</span> sont obligatoires</p>
