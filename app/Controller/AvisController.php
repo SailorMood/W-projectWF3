@@ -13,7 +13,7 @@ class AvisController extends Controller {
 	}
 
     public static function avisUtilisateurs(){
-        $instance = new PDO("mysql:host=localhost;dbname=projet_soutenance", "root", "");
+        $instance = new PDO("mysql:host=localhost;dbname=projet_soutenance;charset=utf8", "root", "");
         $sql = "SELECT * FROM `avis` WHERE id IN (1,2,3,4)";
         $listeAvis = $instance->query($sql)->fetchAll();
 
