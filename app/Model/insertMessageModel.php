@@ -16,6 +16,5 @@ class insertMessageModel extends Model
     VALUES ('" . $newMessage['motif'] . "','" . $newMessage['name'] . "', '" . $newMessage['firstname'] . "', '" . $newMessage['numberphone'] . "','" . $newMessage['email'] . "','" . $newMessage['message'] . "')";
 
         $insertSuccess = $instance->exec($sql);
-
     }
 }

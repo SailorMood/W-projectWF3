@@ -7,14 +7,14 @@
       <label>Sujet :<span class="star">*</span> </label>
 			<select name="motif">
 				<option><< Selectionner >></option>
-        <option name="devis" value="Devis">Devis</option>
-        <option name="renseignements" value="Renseignements">Renseignements</option>
-        <option name="autre" value="Autre">Autre</option>
+        <option value="Devis">Devis</option>
+        <option value="Renseignements">Renseignements</option>
+        <option value="Autre">Autre</option>
       </select><br>
       <label>Nom :<span class="star">*</span> </label><input type="text" name="name" value="" placeholder="Nom"><br>
       <label>Prénom :<span class="star">*</span> </label><input type="text" name="firstname" value="" placeholder="prénom"><br>
       <label>Email :<span class="star">*</span> </label><input type="email" name="email" value="" placeholder="Email"><br>
-      <label>Téléphone : </label><input type="number" name="" value="numberphone" placeholder="Téléphone"><br>
+      <label>Téléphone : </label><input type="number" name="numberphone" value="" placeholder="Téléphone"><br>
       <label>Message :<span class="star">*</span> </label><textarea name="message" placeholder="Message"></textarea><br>
       <input type="submit" name="sendMess" value="Envoyer">
         <p>Les champs suivis d'un <span class="star">*</span> sont obligatoires</p>

@@ -5,7 +5,7 @@
 
         //Contact
 		['GET', '/contact/', 'Contact#afficheContact', 'contact'],
-        ['GET', '/contact/contact', 'MessageController#envoiMessage', 'message'],
+        ['GET|POST', '/contact/contact/', 'MessageController#envoiMessage', 'message'],
 
         //Avis
 		['GET', '/avis/', 'AvisController#afficheAvis', 'avis'],
