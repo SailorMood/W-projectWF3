@@ -69,7 +69,7 @@
 					<a id="itinerary" href="#">Commander/Réserver</a>
 					<!-- <a id="itinerary" href="#">Réserver</a> -->
 				</nav>
-            <div class="back"></div>
+            <div class="back"><img src=""></div>
 
 			<section>
 				<?= $this->section('main_content') ?>
@@ -83,7 +83,7 @@
             </aside>
 		<footer>
 			<ul>
-				<div class="tweet"><li><a href="https://www.twitter.com"title="Notre Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				<div class="socialmedia"><li><a href="https://www.twitter.com"title="Notre Twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 				<li><a href="https://www.facebook.com"title="Notre Facebook"> <i class="fa fa-facebook-official" aria-hidden="true"></i></a></li></div>
 				<li><a href="./avis/"title="Les avis clients">Les avis clients</a></li>
 				<li><a href="./contact/"title="Nous contacter">Contactez nous </a></li>

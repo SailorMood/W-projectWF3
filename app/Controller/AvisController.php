@@ -22,7 +22,7 @@ class AvisController extends Controller {
             $name = $listeAvis[$i]['name'];
             $firstname = $listeAvis[$i]['firstname'];
             $message = $listeAvis[$i]['message'];
-            echo '<h2>'.$name.'</h2>', '<h2>'.$firstname.'</h2>'.'<br>', '<p>'.$message.'</p>';
+            echo '<h2>'.$name.'  '.$firstname.'</h2>'.'<br>', '<p>'.$message.'</p>';
         }
 
     }
