@@ -133,6 +133,8 @@ nav a {
   border: solid 0.1em rgb(39, 56, 92);
   border-radius: 3em;
   padding: 1em;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .customReview p{
