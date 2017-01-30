@@ -24,6 +24,21 @@ class userController extends Controller
             $insertUser = new insertUserModel();
             $insertion = $insertUser->insertUser($newUser);
 
+            $email = $_POST['email'];
+
+    // Préparation du mail de confirmation d'inscription
+            $destinataire = $email;
+            $sujet = "Inscription aux Taxis de Dieppe" ;
+            $entete = "From: inscription@TaxisDieppe.com" ;
+
+
+            $message = 'Bienvenue sur les Taxis de Dieppe, votre inscription est dès à présent effective.
+ 
+        ---------------
+        Ceci est un mail automatique, Merci de ne pas y répondre.';
+
+
+            mail($destinataire, $sujet, $message, $entete) ; // Envoi du mail
 
             $this->show('default/home');
         } else {

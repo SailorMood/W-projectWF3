@@ -78,11 +78,11 @@ $(function(){
   // Faire défiler des images en background -----------------
 
     var images = [
-        "assets/images/taxi1.jpg",
-        "assets/images/taxi4.jpg",
-        "assets/images/taxi3.jpg",
-        "assets/images/taxi5.jpg",
-        "assets/images/taxi6.jpg"
+        "http://localhost/W-projectWF3-Sailor/public/assets/images/taxi1.jpg",
+        "http://localhost/W-projectWF3-Sailor/public/assets/images/taxi4.jpg",
+        "http://localhost/W-projectWF3-Sailor/public/assets/images/taxi3.jpg",
+        "http://localhost/W-projectWF3-Sailor/public/assets/images/taxi5.jpg",
+        "http://localhost/W-projectWF3-Sailor/public/assets/images/taxi6.jpg"
     ];
     var $body = $("body"),
         $bg = $(".back"),
@@ -98,7 +98,7 @@ $(function(){
     $body.css({backgroundImage : "url("+images[c]+")"});
 
     (function loopBg(){
-        $bg.hide().css({backgroundImage : "url("+images[++c%n]+")"}).delay(3000).fadeTo(2000, 1, function(){
+        $bg.hide().css({backgroundImage : "url("+images[++c%n]+")"}).delay(5000).fadeTo(2000, 1, function(){
             $body.css({backgroundImage : "url("+images[c%n]+")"});
             loopBg();
         });

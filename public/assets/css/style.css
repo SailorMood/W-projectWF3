@@ -141,6 +141,8 @@ nav a {
 
 .likefb{
   display: inline-flex;
+  position:absolute;
+  bottom:10em;
 
 }
 
@@ -159,7 +161,7 @@ footer {
   border: solid 0.3em black;
   text-align: center;
   position:absolute;
-  bottom:0px;
+  bottom:0em;
   width: 100%;
 }
 
@@ -176,4 +178,48 @@ footer li {
 li {
   list-style: none;
   font-size: 2.5em;
+}
+
+/************************* Responsive *********************/
+@media (max-width: 360px) {
+  body, html{
+    margin: 0;
+    height: 640px;
+    width: 360px;
+    color: white;
+  }
+
+  section{
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+  }
+
+  aside{
+    visibility: hidden;
+  }
+
+  .back{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  /************** Footer *****************/
+
+  footer{
+    position: relative;
+  }
+
+
+  footer li{
+    padding: 0 0;
+    display: block;
+  }
+
+  .tweet{
+    display: inline-flex;
+  }
+
+  .tweet li{
+    margin-left: 0.5em;
+  }
 }
