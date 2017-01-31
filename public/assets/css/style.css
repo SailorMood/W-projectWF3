@@ -142,10 +142,9 @@ nav a {
 }
 
 .likefb{
-  display: inline-flex;
-  position:absolute;
-  bottom:10em;
-
+  display: flex;
+  justify-content: center;
+  padding-top: 15em;
 }
 
 
@@ -153,6 +152,7 @@ nav a {
 .contact {
   text-align: center;
   font-size: 1.5em;
+  padding-top: 4em;
 }
 
 /****************** Footer *****************/
@@ -162,9 +162,7 @@ footer {
   padding: 2em;
   border: solid 0.3em black;
   text-align: center;
-  position:absolute;
-  bottom:0em;
-  width: 100%;
+
 }
 
 footer a {
